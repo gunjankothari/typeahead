@@ -2,8 +2,13 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
-[typeahead.js][gh-page]
+
+[typeahead.js][gh-page] RequireJS Fork
 =======================
+
+**Fork Information** This is a fork of Twitter's Typeahead with RequireJS support. The release
+version from twitter defines typeahead as 'typeahead.js' which requirejs attempts to load as a 
+local file called `typeahead.js` rather than as a module because of the `.js` in the name
 
 Inspired by [twitter.com]'s autocomplete search functionality, typeahead.js is 
 a flexible JavaScript library that provides a strong foundation for building 

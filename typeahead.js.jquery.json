@@ -9,8 +9,8 @@
   },
   "docs": "https://github.com/twitter/typeahead.js",
   "demo": "http://twitter.github.com/typeahead.js/examples",
-  "name": "typeahead.js",
-  "title": "typeahead.js",
+  "name": "typeahead",
+  "title": "typeahead",
   "author": {
     "name": "Twitter, Inc.",
     "url": "https://twitter.com/twitteross"
