@@ -1,9 +1,11 @@
-[typeahead.js] requirejs compatability fork
+typeahead.js requirejs compatability fork
 ===========================================
 
 **Fork Information** This is a fork of Twitter's Typeahead with RequireJS support. The release
 version from twitter defines typeahead as 'typeahead.js' which requirejs attempts to load as a 
 local file called `typeahead.js` rather than as a module because of the `.js` in the name
+
+Renames `typeahead.js` as `typeahead` and defines the AMD modules correctly for loading
 
 ## Fork Install
 
@@ -13,17 +15,18 @@ This fork is registerd in bower as `typeahead-requirejs`
 $ bower install --save typeahead-requirejs
 ```
 
-Setup requirejs:
+Setup requirejs to load Bloodhound and typeahead separately
 
 ```js
 requirejs.config({
   baseUrl: '/javascripts/',
   paths: {
-  'typeahead': 'vendor/typeahead/dist/typeahead.jquery'
+  'typeahead': 'vendor/typeahead/dist/typeahead.jquery',
+  'bloodhound': 'vendor/typeahead/dist/bloodhound'
 });
 
 // Loads
-require(['typeahead']);
+require(['bloodhound', 'typeahead']);
 ```
 
 will load `typeahead` correctly
