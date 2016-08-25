@@ -1,14 +1,43 @@
-[![build status](https://secure.travis-ci.org/twitter/typeahead.js.svg?branch=master)](http://travis-ci.org/twitter/typeahead.js)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
-
-
-[typeahead.js][gh-page] RequireJS Fork
-=======================
+[typeahead.js] requirejs compatability fork
+===========================================
 
 **Fork Information** This is a fork of Twitter's Typeahead with RequireJS support. The release
 version from twitter defines typeahead as 'typeahead.js' which requirejs attempts to load as a 
 local file called `typeahead.js` rather than as a module because of the `.js` in the name
+
+## Fork Install
+
+This fork is registerd in bower as `typeahead-requirejs`
+
+```sh
+$ bower install --save typeahead-requirejs
+```
+
+Setup requirejs:
+
+```js
+requirejs.config({
+  baseUrl: '/javascripts/',
+  paths: {
+  'typeahead': 'vendor/typeahead/dist/typeahead.jquery'
+});
+
+// Loads
+require(['typeahead']);
+```
+
+will load `typeahead` correctly
+
+*Original README file below*
+
+============================
+
+[![build status](https://secure.travis-ci.org/twitter/typeahead.js.svg?branch=master)](http://travis-ci.org/twitter/typeahead.js)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+
+[typeahead.js][gh-page]
+=======================
 
 Inspired by [twitter.com]'s autocomplete search functionality, typeahead.js is 
 a flexible JavaScript library that provides a strong foundation for building 
