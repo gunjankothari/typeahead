@@ -31,6 +31,11 @@ require(['bloodhound', 'typeahead']);
 
 will load `typeahead` correctly
 
+Other changes:
+
+ * Define `bower` as a dev depandancy (remove dependancy on global bower)
+ * Define `grunt-cli` as a dev depandancy (remove dependancy on global grunt)
+
 *Original README file below*
 
 ============================
